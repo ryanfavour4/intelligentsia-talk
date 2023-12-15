@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* POPPINS FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #1a2537;
+    --primary-rbg: 26 37 55;
+
+    --secondary-color: #b0a180;
+    --secondary-rgb: 176 161 128;
+
+    --dark: #080919;
+    --dark-rgb: 22 22 22;
+
+    --light: #ffffff;
+    --light: 255 255 255;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.1s ease-in-out;
+    scroll-behavior: smooth;
 }
+
+html {
+    overflow-x: hidden;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+#root {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    position: relative;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+input,
+select,
+textarea {
+    outline: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0px 0px 2px 2px rgb(var(--primary-rgb), 0.4),
+        0px 0px 2px 4px rgba(var(--primary-rgb), 0.3),
+        0px 0px 2px 4px rgba(var(--primary-rgb), 0.2);
+}
+
+.breaker {
+    word-wrap: break-word;
+    word-break: break-all;
+    hyphenate-limit-chars: 8 2;
+    hyphens: auto;
+    line-break: strict;
+    overflow-wrap: break-word;
+    white-space: break-spaces;
+    hanging-punctuation: first;
+    line-clamp: 3;
+    text-overflow: ellipsis;
+}
+
+.wrapper {
+    width: 98%;
+    max-width: 1350px;
+    margin: auto;
+    height: 100%;
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(var(--dark-rgb), 5);
+}
+
+.text-stroke {
+    -webkit-text-stroke: 1px var(--dark);
+}
+
