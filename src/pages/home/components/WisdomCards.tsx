@@ -55,6 +55,7 @@ type TWisdomCard = {
         speaker: string;
     };
 };
+
 export function WisdomCard({ quote }: TWisdomCard) {
     return (
         <div className="word-wallbox">
