@@ -3,6 +3,6 @@
             rgba(var(--primary-rgb) / 0.5),
             rgba(var(--primary-rgb) / 0.5)
         ),
-        url("../../../assets/images/dark-blue-background.jpg");
+        url("../../../assets/gif/hero-video.gif");
     background-size: cover;
 }
