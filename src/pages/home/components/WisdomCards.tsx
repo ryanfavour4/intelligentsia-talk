@@ -3,6 +3,29 @@ import "./WisdomCards.css";
 import logo from "../../../assets/icons/times-intelligentsia.png";
 
 export default function WisdomCards() {
+    const quotes = [
+        {
+            quote: "The mind is everything. What you think you become.",
+            speaker: "- Buddha",
+        },
+        {
+            quote: "The mind is everything. What you think you become.",
+            speaker: "- Buddha",
+        },
+        {
+            quote: "The mind is everything. What you think you become.",
+            speaker: "- Buddha",
+        },
+        {
+            quote: "The mind is everything. What you think you become.",
+            speaker: "- Buddha",
+        },
+        {
+            quote: "The mind is everything. What you think you become.",
+            speaker: "- Buddha",
+        },
+    ];
+
     return (
         <div>
             <div className="wrapper">
@@ -16,11 +39,9 @@ export default function WisdomCards() {
 
                 <div className="overflow-hidden overflow-x-auto">
                     <div className="flex items-center gap-6 w-[calc(19rem*6)]">
-                        <WisdomCard />
-                        <WisdomCard />
-                        <WisdomCard />
-                        <WisdomCard />
-                        <WisdomCard />
+                        {quotes.map((quote, index) => {
+                            return <WisdomCard quote={quote} />;
+                        })}
                     </div>
                 </div>
             </div>
@@ -28,20 +49,22 @@ export default function WisdomCards() {
     );
 }
 
-export function WisdomCard() {
+type TWisdomCard = {
+    quote: {
+        quote: string;
+        speaker: string;
+    };
+};
+export function WisdomCard({ quote }: TWisdomCard) {
     return (
         <div className="word-wallbox">
             <div className="top-marble">
                 <div className="word-of-wisdom">
-                    <p>
-                        "Our greatest weakness lies in giving up. The most
-                        certain way to succeed is always to try just one more
-                        time."
-                    </p>
+                    <p>"{quote.quote}"</p>
                 </div>
                 <br />
                 <h4>
-                    <small>- Thomas Edison</small>
+                    <small>{quote.speaker}</small>
                 </h4>
             </div>
             <div className="banner-bottom">
