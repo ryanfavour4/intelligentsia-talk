@@ -1,0 +1,8 @@
+.bg-dark-blue-bg {
+    background-image: linear-gradient(
+            rgba(var(--primary-rgb) / 0.2),
+            rgba(var(--primary-rgb) / 0.2)
+        ),
+        url("../../assets/images/dark-blue-background.jpg");
+    border-bottom: 0.5rem solid var(--secondary-color);
+}
