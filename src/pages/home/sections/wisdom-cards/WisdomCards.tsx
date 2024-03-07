@@ -32,7 +32,7 @@ export default function WisdomCards() {
             <div className="wrapper">
                 <div className="flex items-center justify-center flex-col font-header md:text-2xl text-xl font-semibold mb-10 w-fit m-auto">
                     <h3 className="title-animated">Elevate Your Spirit</h3>
-                    <small className="text-base font-poppins font-normal mt-3">
+                    <small className="text-base font-poppins font-normal mt-2">
                         Inspiring Words to Ignite Passion and Purpose
                     </small>
                 </div>
