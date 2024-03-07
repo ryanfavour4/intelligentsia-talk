@@ -1,0 +1,120 @@
+.word-wallbox {
+    background: url("./../../../../assets/images/white-marble-background.jpg");
+    width: 18em;
+    height: 19em;
+    max-width: 400px;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    margin: 1em 2em;
+    /* overflow: hidden; */
+}
+
+.word-wall-section {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-slide-box {
+    overflow: auto;
+}
+
+.flex-slide-box::-webkit-scrollbar {
+    background: var(--secondary-color);
+    height: 5px;
+}
+
+.flex-slide-box::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+.top-marble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 0;
+    height: 50%;
+    color: var(--secondary-color);
+}
+
+.word-of-wisdom {
+    margin-top: 10px;
+    padding: 0 24px;
+    width: 90%;
+}
+
+.top-marble::before {
+    content: "";
+    position: absolute;
+    border-right: 3px groove var(--secondary-color);
+    width: 60%;
+    height: 40%;
+    right: 20px;
+    animation: updownsticksright 2s linear infinite;
+    animation-delay: 2s;
+    top: 5em;
+}
+
+.top-marble::after {
+    content: "";
+    position: absolute;
+    border-left: 3px groove var(--secondary-color);
+    width: 60%;
+    height: 40%;
+    left: 20px;
+    animation: updownsticksleft 2s linear infinite;
+    bottom: 10em;
+}
+
+.banner-bottom {
+    background: linear-gradient(
+        rgba(var(--primary-rgb) / 0.9),
+        rgba(var(--primary-rgb) / 0.9)
+    );
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.banner-bottom img {
+    width: 10rem;
+}
+
+@keyframes updownsticksleft {
+    0% {
+        bottom: 10em;
+    }
+
+    50% {
+        bottom: 5em;
+    }
+
+    100% {
+        bottom: 10em;
+    }
+}
+
+@keyframes updownsticksright {
+    0% {
+        top: 5em;
+    }
+
+    50% {
+        top: 0em;
+    }
+
+    100% {
+        top: 5em;
+    }
+}

@@ -1,6 +1,6 @@
-import { BrowserRouter as Router } from "react-router-dom";
 import React from "react";
-import Rain from "./components/Rain/Rain";
+import { BrowserRouter as Router } from "react-router-dom";
+import Rain from "./layout/Rain/Rain";
 import Routers from "./routes/Routes";
 
 function App() {

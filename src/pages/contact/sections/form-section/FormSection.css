@@ -1,0 +1,7 @@
+.bg-intelligentsia-logo {
+    background: url("../../../../assets/icons/logo.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}

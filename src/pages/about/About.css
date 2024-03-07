@@ -1,0 +1,8 @@
+.bg-intelligentsia-brand {
+    background-image: linear-gradient(
+            rgba(var(--primary-rgb) / 0.9),
+            rgba(var(--primary-rgb) / 0.9)
+        ),
+        url("../../assets/icons/logo-fade-50.png");
+    background-size: 50%;
+}

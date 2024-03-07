@@ -1,0 +1,119 @@
+.section-bgblue {
+    background: var(--primary-color);
+    color: var(--light);
+    min-height: 16em;
+    line-height: 180%;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.gold-blade,
+.blue-blade {
+    width: 60vw;
+    height: 10em;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.cutrule {
+    height: 0;
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+}
+
+.gold-blade {
+    background: var(--secondary-color);
+    right: 0;
+    transform: rotate(-20deg) skewX(35deg);
+    right: -20%;
+    bottom: -30px;
+    box-shadow: 2px 4px 4px 5px rgba(var(--dark-rgb) / 0.5);
+}
+
+.blue-blade {
+    background: var(--primary-color);
+    transform: rotate(-15deg) skewX(40deg);
+    bottom: -50px;
+    width: 80vw;
+    box-shadow: 2px 4px 4px 5px rgba(var(--dark-rgb) / 0.5);
+}
+
+.intelligentsiaBrand-left {
+    width: 90%;
+    margin: auto;
+    padding: 2em 0;
+}
+
+.intelligentsiaBrand-left img {
+    width: 5em;
+}
+
+.heading-innovative-words {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 2rem;
+}
+
+.inner-word-writeup {
+    display: flex;
+    min-height: 15.5em;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 1em;
+    width: 400px;
+    background-image: linear-gradient(
+            rgba(var(--primary-rgb) / 0.9),
+            rgba(var(--primary-rgb) / 0.9)
+        ),
+        url("../../../../assets/icons/logo-fade-50.png");
+    background-repeat: no-repeat;
+    background-position: 60% top;
+    background-size: 150%;
+    background-blend-mode: darken;
+}
+
+/* media query */
+@media screen and (min-width: 950px) {
+    .section-bgblue {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 2em 0;
+    }
+
+    .intelligentsiaBrand-left {
+        width: 50%;
+    }
+
+    .intelligentsiaBrand-left img {
+        width: 10em;
+    }
+
+    .gold-blade {
+        background: var(--secondary-color);
+        right: 0;
+        transform: skewX(35deg);
+        rotate: -10deg;
+        width: 70vw;
+        right: -20%;
+        bottom: -30px;
+    }
+
+    .blue-blade {
+        background: var(--primary-color);
+        transform: skewX(40deg);
+        rotate: -8deg;
+        bottom: -40px;
+        width: 95vw;
+    }
+
+    .cutrule {
+        display: none;
+    }
+}
