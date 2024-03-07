@@ -38,6 +38,7 @@ html {
 #root {
     scroll-behavior: smooth;
     min-height: 100vh;
+    position: relative;
 }
 
 body {
@@ -113,6 +114,16 @@ textarea:focus {
     -webkit-text-stroke: 1px var(--dark);
 }
 
+.user-select-primary::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.user-select-secondary::selection {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 * {
     scrollbar-width: thin; /* Thin scrollbar */
 }
@@ -131,3 +142,89 @@ textarea:focus {
     background-color: rgba(var(--secondary-rgb) / 0.8);
 }
 
+/* ANIMATION KEYFRAMES */
+
+@keyframes bounceLR {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-10px);
+    }
+    60% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes moveLR {
+    0% {
+        left: 0%;
+    }
+    10% {
+        left: 20%;
+    }
+    20% {
+        left: 40%;
+    }
+    30% {
+        left: 60%;
+    }
+    40% {
+        left: 80%;
+    }
+    50% {
+        left: 90%;
+    }
+    60% {
+        left: 70%;
+    }
+    70% {
+        left: 50%;
+    }
+    80% {
+        left: 20%;
+    }
+    90% {
+        left: 10%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.title-animated {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--light);
+    width: fit-content;
+}
+
+.title-animated::after {
+    content: "";
+    width: 100%;
+    display: block;
+    border: 3px solid var(--secondary-color);
+}
+
+.title-animated::before {
+    content: "";
+    width: 40px;
+    display: block;
+    border: 3px solid var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    transition: 2s ease;
+    animation: moveLR 2.5s linear infinite;
+    animation-delay: 1s;
+}
+
+.bounceLeftRight {
+    animation: bounceLR 1s linear infinite;
+
+    font-size: 3rem;
+}

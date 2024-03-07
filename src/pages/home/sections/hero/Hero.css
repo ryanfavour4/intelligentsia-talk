@@ -1,0 +1,8 @@
+.bg-hero-video {
+    background-image: linear-gradient(
+            rgba(var(--primary-rgb) / 0.5),
+            rgba(var(--primary-rgb) / 0.5)
+        ),
+        url("../../../../assets/gif/hero-video.gif");
+    background-size: cover;
+}

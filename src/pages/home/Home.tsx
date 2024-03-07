@@ -1,13 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Home.css";
-import Navbar from "../../components/Navbar/Navbar";
-import Hero from "./components/Hero";
-import InnovativeWord from "./components/InnovativeWord";
-import HealingJourney from "./components/HealingJourney";
-import WisdomCards from "./components/WisdomCards";
-import SubscribeMail from "./components/SubcribeMail";
-import Footer from "../../components/Footer/Footer";
+import Navbar from "../../layout/Navbar/Navbar";
+import Hero from "./sections/hero/Hero";
+import InnovativeWord from "./sections/innovative-words/InnovativeWord";
+import HealingJourney from "./sections/healing-journey/HealingJourney";
+import WisdomCards from "./sections/wisdom-cards/WisdomCards";
+import SubscribeMail from "./sections/subscribe-mail/SubscribeMail";
+import Footer from "../../layout/Footer/Footer";
+import { useHome } from "./Home.controller";
+import CeoIntro from "./sections/ceo-intro/CeoIntro";
 
 export default function Home() {
     const { handlePlayPause, audioUrl } = useHome();
@@ -19,6 +21,7 @@ export default function Home() {
             <InnovativeWord />
             <HealingJourney />
             <WisdomCards />
+            <CeoIntro />
             <SubscribeMail />
             <Footer />
             <audio autoPlay id="audio">
@@ -27,26 +30,3 @@ export default function Home() {
         </>
     );
 }
-
-const useHome = () => {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const audioUrl = "/audio/bg-music.mp3";
-
-    useEffect(() => {
-        var audio: any = document.getElementById("audio");
-        audio.volume = 0.1;
-        audio.loop = true;
-    }, []);
-
-    const handlePlayPause = () => {
-        var audio: any = document.getElementById("audio");
-        if (isPlaying) {
-            audio.pause();
-        } else {
-            audio.play();
-        }
-        setIsPlaying(!isPlaying);
-    };
-
-    return { handlePlayPause, audioUrl };
-};
