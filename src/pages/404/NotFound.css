@@ -21,6 +21,7 @@
         var(--secondary-color) 40%,
         var(--light) 100%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
