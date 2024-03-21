@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as MenuIcon } from "../../assets/svg/nav-menu-icon.svg";
 import { ReactComponent as ChevronDownIcon } from "../../assets/svg/chevron-down.svg";
 import logo from "../../assets/icons/logo.png";
-import logoIcon from "../../assets/icons/logo-icon.png";
+// import logoIcon from "../../assets/icons/logo-icon.png";
 import "./Navbar.css";
 import useNavbar from "./Navbar.controller";
 
