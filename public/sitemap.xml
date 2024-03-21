@@ -7,4 +7,40 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://intelligentsiatalkv2.netlify.app/about</loc>
+        <lastmod>2023-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intelligentsiatalkv2.netlify.app/contact</loc>
+        <lastmod>2023-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intelligentsiatalkv2.netlify.app/intelligentsia-wall</loc>
+        <lastmod>2023-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intelligentsiatalkv2.netlify.app/candle-light</loc>
+        <lastmod>2023-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intelligentsiatalkv2.netlify.app/the-team</loc>
+        <lastmod>2023-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://intelligentsiatalkv2.netlify.app/events</loc>
+        <lastmod>2023-12-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 import { ReactComponent as MenuIcon } from "../../assets/svg/nav-menu-icon.svg";
 import { ReactComponent as ChevronDownIcon } from "../../assets/svg/chevron-down.svg";
 import logo from "../../assets/icons/logo.png";
-import logoIcon from "../../assets/icons/logo-icon.png";
+// import logoIcon from "../../assets/icons/logo-icon.png";
 import "./Navbar.css";
 import useNavbar from "./Navbar.controller";
 
 export default function Navbar() {
     const {
-        handleToggleNavOpen,
         isScrolled,
         navClassName,
         navigations,
+        handleToggleNavOpen,
         toggleDropdown,
     } = useNavbar();
 
@@ -26,15 +26,17 @@ export default function Navbar() {
                 }`}
             >
                 <div className="wrapper flex items-center justify-between">
+                    {/* md:hidden */}
                     <MenuIcon
-                        className="w-8 cursor-pointer md:hidden"
+                        className="w-8 cursor-pointer "
                         onClick={handleToggleNavOpen}
                     />
                     {/* //?? ==== SLIDE SIDE BAR ===== ??// */}
+                    {/* md:hidden */}
                     <div
-                        className={`${navClassName} fixed bg-primary top-0 bottom-0 right-0 left-0 md:hidden z-10`}
+                        className={`${navClassName} fixed bg-primary top-0 bottom-0 right-0 left-0  z-10 `}
                     >
-                        <div className="w-[98%] m-auto py-4 flex items-center justify-between border-b-2 border-secondary mb-4">
+                        <div className="w-[98%] m-auto py-2 flex items-center justify-between border-b-2 border-secondary mb-4">
                             <MenuIcon
                                 className="w-8 cursor-pointer"
                                 onClick={handleToggleNavOpen}
@@ -42,15 +44,15 @@ export default function Navbar() {
                             <div className="flex-[1] flex items-center justify-center text-center">
                                 <Link onClick={handleToggleNavOpen} to={"/"}>
                                     <img
-                                        src={logoIcon}
-                                        className="w-16 mr-4 md:mr-0"
+                                        src={logo}
+                                        className="w-36 mr-4 md:mr-0"
                                         alt="intelligentsia talk"
                                     />
                                 </Link>
                             </div>
                         </div>
                         <div className="h-5/6 pb-[5%]">
-                            <ul className="pt-10 flex flex-col gap-6 h-full overflow-y-auto">
+                            <ul className="pt-10 flex flex-col gap-6 h-full overflow-y-auto scroll-hidden md:max-w-7xl md:mr-auto">
                                 {navigations.map((navigation, idx) =>
                                     navigation.nestedLinks?.length ? (
                                         <li key={navigation.name} className="">
@@ -101,8 +103,8 @@ export default function Navbar() {
                             </ul>
                         </div>
                     </div>
-
-                    <div className="flex-[1] md:flex-none flex items-center justify-center text-center">
+                    {/* md:flex-none */}
+                    <div className="flex-[1]  flex items-center justify-center text-center">
                         <Link to={"/"}>
                             <img
                                 src={logo}
@@ -111,8 +113,8 @@ export default function Navbar() {
                             />
                         </Link>
                     </div>
-
-                    <ul className="hidden md:flex items-center gap-8">
+                    {/* md:flex */}
+                    <ul className="hidden  items-center gap-8">
                         {navigations.map((navigation, idx) =>
                             navigation.nestedLinks?.length ? (
                                 navigation.forDesktop !== false && (
@@ -150,8 +152,8 @@ export default function Navbar() {
                             )
                         )}
                     </ul>
-
-                    <div className="hidden md:flex items-center gap-4">
+                    {/* md:flex */}
+                    <div className="hidden  items-center gap-4">
                         <button className="inline-flex text-primary font-semibold bg-secondary border-secondary border py-2 px-6 focus:outline-none hover:bg-secondary/90 rounded-lg">
                             Sign In
                         </button>

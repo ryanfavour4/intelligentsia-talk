@@ -91,6 +91,20 @@ textarea:focus {
     text-overflow: ellipsis;
 }
 
+.scroll-hidden {
+    scrollbar-width: none;
+}
+
+/* Hide vertical scrollbar */
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide horizontal scrollbar */
+.scroll-hidden::-webkit-scrollbar-horizontal {
+    display: none;
+}
+
 .font-poppins {
     font-family: "poppins", sans-serif;
 }

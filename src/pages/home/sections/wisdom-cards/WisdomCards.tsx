@@ -28,7 +28,7 @@ export default function WisdomCards() {
     ];
 
     return (
-        <div>
+        <div className="bg-primary">
             <div className="wrapper">
                 <div className="flex items-center justify-center flex-col font-header md:text-2xl text-xl font-semibold mb-10 w-fit m-auto">
                     <h3 className="title-animated">Elevate Your Spirit</h3>

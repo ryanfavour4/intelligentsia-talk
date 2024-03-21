@@ -3,16 +3,26 @@ import { useEffect, useState } from "react";
 export default function useNavbar() {
     const [navigations, setNavigations] = useState([
         { name: "Home", link: "/" },
-        { name: "About Us", link: "/about" },
-        { name: "Contact Us", link: "/contact" },
         {
-            name: "Intelligentsia",
+            name: "Account",
+            link: "#",
+            forDesktop: false,
+            isOpen: false,
+            nestedLinks: [
+                { name: "Register", link: "/register" },
+                { name: "Sign In", link: "/sign-in" },
+            ],
+        },
+        { name: "About Us", link: "/about" },
+        {
+            name: "Intelligentsia Wall",
             link: "#",
             isOpen: false,
             nestedLinks: [
-                { name: "Intelligentsia Wall", link: "/intelligentsia-wall" },
+                // { name: "Intelligentsia Wall", link: "/intelligentsia-wall" },
                 { name: "Candle Light Room", link: "/candle-light" },
-                { name: "Meet The Team", link: "/the-team" },
+                { name: "Key Speaker", link: "/key-speaker" },
+                // { name: "Meet The Team", link: "/the-team" },
             ],
         },
         {
@@ -25,16 +35,7 @@ export default function useNavbar() {
                 { name: "Most Watched", link: "/videos-popular" },
             ],
         },
-        {
-            name: "Account",
-            link: "#",
-            forDesktop: false,
-            isOpen: false,
-            nestedLinks: [
-                { name: "Register", link: "/register" },
-                { name: "Sign In", link: "/sign-in" },
-            ],
-        },
+        { name: "Contact Us", link: "/contact" },
     ]);
 
     //!!======= SCROLL PASS THE NAVBAR =========!!//
