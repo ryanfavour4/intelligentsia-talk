@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Loading from "../layout/Loading/Loading";
 import ScrollToTop from "../layout/ScrollToTop";
 import NotFound from "../pages/404/NotFound";
+import CandleLight from "../pages/candle-light/CandleLight";
 
 // !! ========= PAGES ======= !! //
 const Contact = lazy(() => import("../pages/contact/Contact"));
@@ -18,6 +19,7 @@ const Routers = () => {
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/candle-light" element={<CandleLight />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </ScrollToTop>

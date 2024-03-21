@@ -18,8 +18,8 @@ export default function Home() {
         <>
             <Navbar />
             <Hero handlePlayPause={handlePlayPause} />
-            <InnovativeWord />
-            <HealingJourney />
+            {/* <InnovativeWord /> */}
+            {/* <HealingJourney /> */}
             <WisdomCards />
             <CeoIntro />
             <SubscribeMail />
