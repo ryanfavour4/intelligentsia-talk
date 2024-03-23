@@ -22,7 +22,7 @@ const Footer = () => {
                     <a href="/">
                         <YtIcon className="text-secondary w-6 h-6" />
                     </a>
-                    <a href="/">
+                    <a href="https://www.instagram.com/intelligentsiatalk">
                         <IgIcon className="text-secondary w-6 h-6" />
                     </a>
                 </div>

@@ -67,7 +67,7 @@ export default function Hero({ handlePlayPause }: props) {
                     <a href="/">
                         <YtIcon className="text-secondary w-10 h-10" />
                     </a>
-                    <a href="/">
+                    <a href="https://www.instagram.com/intelligentsiatalk">
                         <IgIcon className="text-secondary w-10 h-10" />
                     </a>
                 </div>

@@ -5,8 +5,11 @@ import igIcon from "../../../../assets/svg/instagram-primary-outline.svg";
 import fbIcon from "../../../../assets/svg/facebook-primary-outline.svg";
 import twIcon from "../../../../assets/svg/twitter-primary-outline.svg";
 import ytIcon from "../../../../assets/svg/youtube-primary-outline.svg";
+import useFormSection from "./FormSection.controller";
 
 export default function FormSection() {
+    const { formRef, handleSubmitContactForm } = useFormSection();
+
     return (
         <div className="py-6 bg-intelligentsia-logo">
             <div className="wrapper md:grid grid-cols-2 flex flex-col gap-4 bg-primary/10 backdrop-blur-lg p-4 rounded shadow-inner shadow-secondary/50">
@@ -51,7 +54,7 @@ export default function FormSection() {
                             Connect with us :
                         </p>
                         <div className="flex items-center gap-4">
-                            <a href="http://">
+                            <a href="https://www.instagram.com/intelligentsiatalk">
                                 <img
                                     className="bg-secondary rounded-md p-1 w-8 h-8 md:w-12 md:h-12 md:p-2"
                                     src={igIcon}
@@ -86,7 +89,14 @@ export default function FormSection() {
                 <hr className="border-secondary mb-4 md:hidden" />
 
                 <div className="">
-                    <form action="" className="md:max-w-md md:m-auto">
+                    <form
+                        ref={formRef}
+                        onSubmit={(e: any) => {
+                            e.preventDefault();
+                            handleSubmitContactForm();
+                        }}
+                        className="md:max-w-md md:m-auto"
+                    >
                         <h3 className="font-header font-bold md:text-2xl text-xl mb-2 text-secondary">
                             Contact Us
                         </h3>
@@ -97,7 +107,7 @@ export default function FormSection() {
 
                         <div className="flex flex-col gap-4">
                             <Input
-                                name="Full Name"
+                                name="Name"
                                 type="text"
                                 label="Full Name"
                                 placeholder="Please Enter Your Name..."
