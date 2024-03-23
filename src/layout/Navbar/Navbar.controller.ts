@@ -21,20 +21,20 @@ export default function useNavbar() {
             nestedLinks: [
                 // { name: "Intelligentsia Wall", link: "/intelligentsia-wall" },
                 { name: "Candle Light Room", link: "/candle-light" },
-                { name: "Key Speaker", link: "/key-speaker" },
-                // { name: "Meet The Team", link: "/the-team" },
+                // { name: "Key Speaker", link: "/key-speaker" },
+                { name: "Meet The Team", link: "/the-team" },
             ],
         },
-        {
-            name: "Videos",
-            link: "#",
-            isOpen: false,
-            nestedLinks: [
-                { name: "All Videos", link: "/all-videos" },
-                { name: "Latest Videos", link: "/videos-latest" },
-                { name: "Most Watched", link: "/videos-popular" },
-            ],
-        },
+        // {
+        //     name: "Videos",
+        //     link: "#",
+        //     isOpen: false,
+        //     nestedLinks: [
+        //         { name: "All Videos", link: "/all-videos" },
+        //         { name: "Latest Videos", link: "/videos-latest" },
+        //         { name: "Most Watched", link: "/videos-popular" },
+        //     ],
+        // },
         { name: "Contact Us", link: "/contact" },
     ]);
 

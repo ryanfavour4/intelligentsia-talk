@@ -59,7 +59,7 @@ type TWisdomCard = {
 export function WisdomCard({ quote }: TWisdomCard) {
     return (
         <Link
-            to={"/intelligentsia-wall"}
+            to={"/candle-light"}
             className="word-wallbox overflow-hidden transition-all hover:[-webkit-filter:drop-shadow(0px_0px_5px_var(--secondary-color))] hover:scale-[1.02]"
         >
             <div className="top-marble">
