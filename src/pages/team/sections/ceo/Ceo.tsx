@@ -7,7 +7,7 @@ export default function Ceo() {
             <div className="wrapper">
                 <article className="md:text-justify my-8 relative">
                     <h3 className="text-center title-animated font-header font-semibold md:text-2xl text-xl !mt-0">
-                        💞ABOUT THE FOUNDER ❤️. Mr Jospeh Ezeakunne
+                        ABOUT THE FOUNDER. Mr Jospeh Ezeakunne
                     </h3>
                     <span className="md:w-fit md:m-auto md:float-right md:p-6 mb-6">
                         <img
@@ -42,10 +42,10 @@ export default function Ceo() {
                     </p>
                     <br />
                     <p>
-                        🎉🎉🎉🎉🎉 Mr. Joseph Ezeakunne, holding a BSc in
-                        Business from the esteemed University of Bedfordshire in
-                        England, understands the transformative potential of
-                        education and introspection. In Joseph's vision, purpose
+                        Mr. Joseph Ezeakunne, holding a BSc in Business from the
+                        esteemed University of Bedfordshire in England,
+                        understands the transformative potential of education
+                        and introspection. In Joseph's vision, purpose
                         transcends boundaries. A purposeful life is not a
                         solitary pursuit but a collective endeavor, where the
                         wisdom gained in silence becomes a beacon shared with
@@ -59,7 +59,7 @@ export default function Ceo() {
                         individual boundaries. In the quiet spaces, in shared
                         lessons, and in the purpose that binds us all,
                         Intelligentsia Talk comes to life, a testament to the
-                        transformative power of the innermost place.💞💞
+                        transformative power of the innermost place.
                     </p>
                 </article>
             </div>

@@ -1,12 +1,14 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Hero.css";
 // import provokingThoughts from "../../../../assets/icons/provoking-deeper-thought.png";
 import heroBanner from "../../../../assets/images/intelligentsia-talk-banner-spines.jpg";
 import manOnStage from "../../../../assets/images/man-on-stage.jpg";
-import { ReactComponent as FbIcon } from "../../../../assets/svg/gold-fb.svg";
-import { ReactComponent as TwIcon } from "../../../../assets/svg/gold-tw.svg";
-import { ReactComponent as IgIcon } from "../../../../assets/svg/gold-ig.svg";
-import { ReactComponent as YtIcon } from "../../../../assets/svg/gold-yt.svg";
+import { Link } from "react-router-dom";
+// import { ReactComponent as FbIcon } from "../../../../assets/svg/gold-fb.svg";
+// import { ReactComponent as TwIcon } from "../../../../assets/svg/gold-tw.svg";
+// import { ReactComponent as IgIcon } from "../../../../assets/svg/gold-ig.svg";
+// import { ReactComponent as YtIcon } from "../../../../assets/svg/gold-yt.svg";
 
 type props = {
     handlePlayPause: () => void;
@@ -57,7 +59,7 @@ export default function Hero({ handlePlayPause }: props) {
                     Elevating Human Connection.
                 </p>
 
-                <div className="flex items-center gap-4">
+                {/* <div className="flex items-center gap-4">
                     <a href="/">
                         <FbIcon className="text-secondary w-10 h-10" />
                     </a>
@@ -70,18 +72,12 @@ export default function Hero({ handlePlayPause }: props) {
                     <a href="https://www.instagram.com/intelligentsiatalk">
                         <IgIcon className="text-secondary w-10 h-10" />
                     </a>
-                </div>
+                </div> */}
                 <div className="border-b-4 border-secondary w-full mt-2"></div>
                 <div className="flex flex-col">
                     <span className="">Powered by</span>
                     <span className="">
-                        <a
-                            href="https://www.timesandintelligentsia.com"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            www.timesandintelligentsia.com
-                        </a>
+                        <Link to="#">Times And Intelligentsia</Link>
                     </span>
                 </div>
                 {/* <small>Provoking Deeper Thoughts!</small> */}
