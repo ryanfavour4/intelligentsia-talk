@@ -18,8 +18,9 @@ export default function FormSection() {
                         Let's get in touch
                     </h3>
                     <p className="mb-8">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Saepe dolorum adipisci recusandae praesentium dicta!
+                        Feel free to reach out to us at your earliest
+                        convenience so we can discuss your needs and how we can
+                        assist you further.
                     </p>
 
                     <div className="flex flex-col gap-3 text-secondary mb-4">
