@@ -3,21 +3,22 @@ import { useEffect, useState } from "react";
 export default function useNavbar() {
     const [navigations, setNavigations] = useState([
         { name: "Home", link: "/" },
-        {
-            name: "Account",
-            link: "#",
-            forDesktop: false,
-            isOpen: false,
-            nestedLinks: [
-                { name: "Register", link: "/register" },
-                { name: "Sign In", link: "/sign-in" },
-            ],
-        },
+        // {
+        //     name: "Account",
+        //     link: "#",
+        //     forDesktop: false,
+        //     isOpen: false,
+        //     nestedLinks: [
+        //         { name: "Register", link: "/register" },
+        //         { name: "Sign In", link: "/sign-in" },
+        //     ],
+        // },
         { name: "About Us", link: "/about" },
         {
             name: "Intelligentsia Wall",
             link: "#",
             isOpen: false,
+            forDesktop: false,
             nestedLinks: [
                 // { name: "Intelligentsia Wall", link: "/intelligentsia-wall" },
                 { name: "Candle Light Room", link: "/candle-light" },
