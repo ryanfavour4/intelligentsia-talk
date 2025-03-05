@@ -14,18 +14,20 @@ export default function useNavbar() {
         //     ],
         // },
         { name: "About Us", link: "/about" },
-        {
-            name: "Intelligentsia Wall",
-            link: "#",
-            isOpen: false,
-            forDesktop: false,
-            nestedLinks: [
-                // { name: "Intelligentsia Wall", link: "/intelligentsia-wall" },
-                { name: "Candle Light Room", link: "/candle-light" },
-                // { name: "Key Speaker", link: "/key-speaker" },
-                { name: "Meet The Team", link: "/the-team" },
-            ],
-        },
+        { name: "Candle Light Room", link: "/candle-light" },
+
+        // {
+        //     name: "Intelligentsia Wall",
+        //     link: "#",
+        //     isOpen: false,
+        //     forDesktop: false,
+        //     nestedLinks: [
+        //         { name: "Intelligentsia Wall", link: "/intelligentsia-wall" },
+        //         { name: "Candle Light Room", link: "/candle-light" },
+        //         { name: "Key Speaker", link: "/key-speaker" },
+        //         { name: "Meet The Team", link: "/the-team" },
+        //     ],
+        // },
         // {
         //     name: "Videos",
         //     link: "#",
@@ -37,6 +39,13 @@ export default function useNavbar() {
         //     ],
         // },
         { name: "Contact Us", link: "/contact" },
+        {
+            name: "",
+            link: "#",
+            isOpen: false,
+            forDesktop: false,
+            nestedLinks: [{ name: "", link: "" }],
+        },
     ]);
 
     //!!======= SCROLL PASS THE NAVBAR =========!!//

@@ -1,5 +1,5 @@
 import React from "react";
-import ceoImage from "../../../../assets/images/joseph-ezeakunne.jpg";
+import ceoImage from "../../../../assets/images/intelligentsia-talk-banner.jpg";
 
 export default function OurMission() {
     return (
@@ -27,7 +27,7 @@ export default function OurMission() {
                 <span className="md:w-fit md:m-auto md:mt-4">
                     <img
                         src={ceoImage}
-                        className="w-full object-top md:w-96 h-72 md:h-auto object-cover border-4 border-secondary rounded-xl m-auto"
+                        className="w-full object-top md:w-96 h-72 md:h-96 object-cover border-4 border-secondary rounded-xl m-auto"
                         alt=""
                     />
                 </span>

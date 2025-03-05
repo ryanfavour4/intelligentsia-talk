@@ -6,7 +6,7 @@ export default function CeoIntro() {
         <section className="pt-4 pb-6">
             <div className="wrapper">
                 <h3 className="title-animated text-2xl font-header">
-                    Intelligentsia Talk C.E.O
+                    Intelligentsia Talk
                 </h3>
 
                 <div className="md:grid grid-cols-2 md:gap-2 flex flex-col gap-5">
