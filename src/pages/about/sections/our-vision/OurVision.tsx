@@ -18,20 +18,11 @@ export default function OurVision() {
                         Our Vision
                     </h3>
                     <p>
-                        Envision a world where the stage transcends its physical
-                        dimensions—a realm where every speech becomes a profound
-                        dialogue between souls, resonating with the shared
-                        experiences of humanity. In this transformative space,
-                        individuals are not just speakers; they are storytellers
-                        of the human condition. Our vision is a stage that
-                        echoes with authenticity, where each word spoken is a
-                        stepping stone toward deeper connections, understanding,
-                        and collective growth. Here, the power of speech is
-                        harnessed not for personal gain but as a vessel for
-                        shared wisdom, forging bonds that unite us in the
-                        journey of being truly human. Welcome to a stage where
-                        the spotlight doesn't just illuminate speakers; it
-                        illuminates the very essence of our shared existence.
+                        To create a global space where voices are heard, stories
+                        are honored, and minds find clarity. Intelligentsia Talk
+                        is a platform to leave a message that matters and a
+                        retreat for reflection—bridging wisdom, mindfulness, and
+                        action to shape a more thoughtful and connected world.
                     </p>
                 </article>
             </div>

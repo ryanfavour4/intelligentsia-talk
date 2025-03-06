@@ -7,8 +7,8 @@ import AboutHeader from "./sections/about-header/AboutHeader";
 import "./About.css";
 import OurMission from "./sections/our-mission/OurMission";
 import OurVision from "./sections/our-vision/OurVision";
-import OurSections from "./sections/our-secrets/OurSections";
 import AboutSection1 from "./sections/about-section-1/AboutSection1";
+import OurSpeakers from "./sections/our-speakers/OurSpeakers";
 
 export default function About() {
     return (
@@ -19,7 +19,7 @@ export default function About() {
             {/* <ConverseOurWorld /> */}
             <OurMission />
             <OurVision />
-            <OurSections />
+            <OurSpeakers />
             <SubscribeMail />
             <Footer />
         </>

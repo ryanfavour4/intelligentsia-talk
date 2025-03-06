@@ -25,14 +25,20 @@ export default function CeoIntro() {
                     </div>
                     <article className="flex flex-col justify-between md:py-6">
                         <p>
-                            At Intelligentsia Talk, our mission is to transform
-                            the stage into a powerful conduit for shared human
-                            experiences. We empower individuals to transcend
-                            mere speakership, becoming storytellers who weave
-                            authenticity into every word. Our commitment is to
-                            curate a platform where the spoken word is a
-                            catalyst for understanding, connection, and
-                            collective growth.
+                            At Intelligentsia Talk, every voice matters. This is
+                            more than a platform—it’s a space where powerful
+                            messages echo through personal journeys, family
+                            ties, and the greater societal story. It’s a call to
+                            explore, to reflect, and most importantly, to leave
+                            your message—the kind that lingers in hearts and
+                            minds long after the words are spoken. At its core,
+                            Intelligentsia Talk values the wisdom found in
+                            everyday life—the kind that isn’t just learned in
+                            books, but shaped by real experiences, struggles,
+                            and triumphs. It’s a tribute to those who have
+                            carved their own paths, who have found their voices
+                            despite challenges, and who dare to speak their
+                            truth.
                         </p>
 
                         <Link

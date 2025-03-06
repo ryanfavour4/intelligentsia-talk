@@ -10,17 +10,13 @@ export default function OurMission() {
                         Our Mission
                     </h3>
                     <p>
-                        At Intelligentsia Talk, our mission is to transform the
-                        stage into a powerful conduit for shared human
-                        experiences. We empower individuals to transcend mere
-                        speakership, becoming storytellers who weave
-                        authenticity into every word. Our commitment is to
-                        curate a platform where the spoken word is a catalyst
-                        for understanding, connection, and collective growth.
-                        Join us in illuminating the profound beauty of the human
-                        experience—one speech at a time. Welcome to a mission
-                        that amplifies the strength of words to inspire and
-                        unite.
+                        Intelligentsia Talk exists to amplify voices, bridge
+                        intellect with lived experience, and ignite meaningful
+                        conversations that shape society. We provide a space
+                        where personal stories, societal challenges, and deep
+                        reflections converge—turning wisdom into action and
+                        fostering a world where no story is lost, no truth is
+                        buried, and no voice is unheard.
                     </p>
                 </article>
 
