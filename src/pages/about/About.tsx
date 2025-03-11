@@ -8,7 +8,7 @@ import "./About.css";
 import OurMission from "./sections/our-mission/OurMission";
 import OurVision from "./sections/our-vision/OurVision";
 import AboutSection1 from "./sections/about-section-1/AboutSection1";
-import OurSpeakers from "./sections/our-speakers/OurSpeakers";
+// import OurSpeakers from "./sections/our-speakers/OurSpeakers";
 
 export default function About() {
     return (
