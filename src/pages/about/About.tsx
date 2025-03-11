@@ -19,7 +19,7 @@ export default function About() {
             {/* <ConverseOurWorld /> */}
             <OurMission />
             <OurVision />
-            <OurSpeakers />
+            {/* <OurSpeakers /> */}
             <SubscribeMail />
             <Footer />
         </>
